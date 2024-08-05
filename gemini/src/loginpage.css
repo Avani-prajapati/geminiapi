@@ -1,0 +1,14 @@
+
+.imgg img{
+    filter:drop-shadow(3rem 4rem 4rem #d2e7d0 ); 
+}
+
+
+.formm input{
+    background-color: rgb(150, 197, 123);
+}
+
+.log{
+/* background-color: aqua; */
+background: url("../public/geminiimage/loginback.png") no-repeat center/cover;
+}

@@ -1,0 +1,15 @@
+.nav-ul li a{
+color: white;
+}
+
+.nav-ul li a:hover{
+  background-color: rgb(107, 197, 107);
+
+  color: black;
+  border-radius: 10px;
+}
+
+.navbar{
+background-color: rgb(63, 173, 63);
+  /* background: transparent; */
+}

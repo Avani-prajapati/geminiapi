@@ -1,0 +1,43 @@
+
+.card_ img{
+height: 20rem;
+}
+.ca:hover{
+ filter: drop-shadow(20px 20px 30px rgb(213, 249, 213));
+ scale: 1.1;
+}
+.user{
+    border-radius: 20px;
+background-color: rgb(144, 205, 144);
+background: transparent;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+      background-color: white;
+    }
+    ::-webkit-scrollbar-thumb{
+     background-color:  rgb(96, 179, 61);
+     border-radius: 6px;
+    }
+
+ .profile{
+   /* border-radius: 80px; */
+   /* background: url("../public/geminiimage/loginback.png")no-repeat top/cover ; */
+   /* opacity: 20/; */
+   box-shadow: inset;
+   background-color: rgb(166, 218, 166);
+   /* border-bottom-left-radius: 80px; */
+   border-bottom-right-radius: 190px;
+   /* border-top-right-radius: 120px; */
+  }   
+ .receuser{
+  background: url("../public/geminiimage/1722494855629.jpg") no-repeat top/cover;
+  opacity: 50px;
+  /* border-radius: 80px; */
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  /* border-top-left-radius: 80px; */
+}   
