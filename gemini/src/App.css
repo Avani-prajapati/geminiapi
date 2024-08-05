@@ -49,7 +49,7 @@ color: white;
 .receuser::before{
   content: "";
 background:url('/geminiimage/finalg12.webp') no-repeat top/cover;
-background:url('../public/geminiimage/g7.jpg') no-repeat bottom/cover;
+background:url('/geminiimage/g7.jpg') no-repeat bottom/cover;
 
 position:absolute;
 height: 100%;
