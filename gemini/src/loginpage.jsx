@@ -4,13 +4,13 @@ import Header from "./header.jsx"
 export default function loginpage(){
     return(
         
-        <div className='log mt-5 pt-4 vh-100 container-fluid w-100'>
+        <div className='log mt-5 pt-4 pb-5 log container-fluid w-100'>
       <Header></Header>
-      <div className=' backimg align d-flex row p-3 justify-content-between' id='login'>
-        <div className='col-md-6 col-12 imgg text-center'>
-            <img src='./geminiimage/login image.webp' style={{height:400}}></img>
+      <div className=' backimg align d-flex row p-3  justify-content-between' id='login'>
+        <div className='col-lg-6 col-12 imgg text-center'>
+            <img src='./geminiimage/login image.webp' className=' img-fluid' ></img>
         </div>
-    <form  className='formm col-md-6 col-12 px-5 mt-sm-2 mt-md-0 text-white font-monospace '>
+    <form  className='formm col-lg-6 col-12 px-5 mt-sm-2 mt-md-0 text-white font-monospace '>
     <h2 className='text-center'>Login</h2>
       
         <div className="mb-3">

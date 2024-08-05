@@ -2,6 +2,10 @@
 .imgg img{
     filter:drop-shadow(3rem 4rem 4rem #d2e7d0 ); 
 }
+.imgg img{
+height: 24.5rem;
+/* width: 18rem; */
+}
 
 
 .formm input{
@@ -9,6 +13,7 @@
 }
 
 .log{
-/* background-color: aqua; */
-background: url("../public/geminiimage/loginback.png") no-repeat center/cover;
+background: url("/geminiimage/loginback.png") no-repeat center/cover;
+height: inherit;
+
 }

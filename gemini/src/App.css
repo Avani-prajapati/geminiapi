@@ -1,6 +1,6 @@
 
 .card_ img{
-height: 20rem;
+height: 18rem;
 }
 .ca:hover{
  filter: drop-shadow(20px 20px 30px rgb(213, 249, 213));
@@ -11,6 +11,7 @@ height: 20rem;
 background-color: rgb(144, 205, 144);
 background: transparent;
 }
+
 
 ::-webkit-scrollbar{
     width: 10px;
@@ -24,20 +25,37 @@ background: transparent;
     }
 
  .profile{
-   /* border-radius: 80px; */
-   /* background: url("../public/geminiimage/loginback.png")no-repeat top/cover ; */
-   /* opacity: 20/; */
    box-shadow: inset;
-   background-color: rgb(166, 218, 166);
-   /* border-bottom-left-radius: 80px; */
+   box-shadow: 90px 50px 200px 30px rgb(17, 20, 17);
+
    border-bottom-right-radius: 190px;
-   /* border-top-right-radius: 120px; */
+   border-bottom-left-radius: 190px;
   }   
- .receuser{
-  background: url("../public/geminiimage/1722494855629.jpg") no-repeat top/cover;
-  opacity: 50px;
-  /* border-radius: 80px; */
-  border-bottom-left-radius: 80px;
-  border-bottom-right-radius: 80px;
-  /* border-top-left-radius: 80px; */
-}   
+
+.exp{
+  background-color: white;
+  display: block;
+position: relative;
+}
+ .last{
+  display: block;
+  position: relative;
+
+}  
+
+.receuser{
+color: white;
+}
+.receuser::before{
+  content: "";
+background:url('/geminiimage/finalg12.webp') no-repeat top/cover;
+background:url('../public/geminiimage/g7.jpg') no-repeat bottom/cover;
+
+position:absolute;
+height: 100%;
+top: 0px;
+left: 0px;
+width: 100%;
+z-index: -1;
+opacity: 0.75;
+}
