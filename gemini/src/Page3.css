@@ -1,0 +1,19 @@
+.bgg{
+    background-color: rgb(255, 255, 255);
+    
+}
+.alignn{
+    border: 2px solid rgb(14, 17, 14);
+    height: 13rem;
+    width: 13rem;
+    border-radius:3rem;
+}
+.colorr{
+    color: rgb(0, 110, 0);
+}
+.seccol{
+    background-color: #EFFFDF;
+}
+.camera{
+    height: 1.7rem;
+}
