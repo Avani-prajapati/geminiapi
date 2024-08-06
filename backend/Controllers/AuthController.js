@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken')
 const signup = async (req,res)=>{
     try{
         const {name,email,password}=req.body
+        console.log(req.body)
         const user = await UserModel.findOne({email})
         if (user){
             return res.status(409)
@@ -28,6 +29,7 @@ const signup = async (req,res)=>{
 const login = async (req,res)=>{
     try{
         const {email,password}=req.body
+        console.log(req.body);
         const user = await UserModel.findOne({email})
         const errorMsg = 'Auth failed, email & password mismatched'
         if (!user){

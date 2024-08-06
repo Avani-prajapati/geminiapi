@@ -1,7 +1,25 @@
 import './loginpage.css';
 import Header from "./header.jsx"
+import { useState } from 'react';
+import axios from "axios";
 
 export default function loginpage(){
+    const [email,setEmail] = useState("");
+    const [password,setPassword] = useState("");
+   
+
+   function onsubmit(e){
+        e.preventDefault();
+        axios.post("http://localhost:8080/auth/login",{email:email,password:password})
+        .then(res => {console.log(res.data.name)
+        })
+        
+       console.log(email);
+       console.log(password);
+       setEmail("");
+       setPassword("");
+    }
+
     return(
         
         <div className='log mt-5 pt-4 pb-5 log container-fluid w-100'>
@@ -14,16 +32,16 @@ export default function loginpage(){
     <h2 className='text-center'>Login</h2>
       
         <div className="mb-3">
-        <label for="exampleInputPhone" class="form-label">Mobile number</label>
-        <input type="text" class="form-control" id="exampleInputPhone" aria-describedby="emailHelp"/>
+        <label htmlFor="exampleInputPhone" className="form-label">Email</label>
+        <input type="text" className="form-control" value={email} id="exampleInputPhone" aria-describedby="emailHelp" onChange={ e => setEmail(e.target.value)} />
         
         </div>
         <div className="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1"/>
+        <label htmlFor="exampleInputPassword1" className="form-label" >Password</label>
+        <input type="password" className="form-control" value={password} id="exampleInputPassword1" onChange={ e => setPassword(e.target.value)}/>
         </div>
         <div className='text-center m-4'>
-        <button type="submit" class="btn btn-success ">Submit</button> 
+        <button type="submit" className="btn btn-success " onClick={onsubmit}> Login </button> 
         </div>
         <div>
             <h5 className='text-center'> Not register yet<a href='/register'> REGISTER NOW</a></h5>
