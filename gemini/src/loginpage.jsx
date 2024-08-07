@@ -16,11 +16,13 @@ export default function loginpage(){
         .then(res => {console.log(res.data)
             Cookie.set('token',res.data.jwtToken)
         })
-
+    
        setEmail("");
        setPassword("");
         
     }
+   
+
 
     return(
         <div className='log mt-5 pt-4 pb-5 log container-fluid w-100'>
@@ -33,16 +35,16 @@ export default function loginpage(){
     <h2 className='text-center'>Login</h2>
       
         <div className="mb-3">
-        <label htmlFor="exampleInputPhone" className="form-label">Email</label>
-        <input type="text" className="form-control" value={email} id="exampleInputPhone" aria-describedby="emailHelp" onChange={ e => setEmail(e.target.value)} />
-        
+        <label  htmlFor="exampleInputPhone"  className="form-label">Email</label>
+        <input  type="email" className="form-control" value={email} id="exampleInputmail" aria-describedby="emailHelp" onChange={ e => setEmail(e.target.value)} />
+       
         </div>
         <div className="mb-3">
         <label htmlFor="exampleInputPassword1" className="form-label" >Password</label>
-        <input type="password" className="form-control" value={password} id="exampleInputPassword1" onChange={ e => setPassword(e.target.value)}/>
+        <input type="password" className="form-control" value={password} pattern='.{6,}' title='Must Contain Atleast 6 letters' id="exampleInputPassword1" onChange={ e => setPassword(e.target.value)}/>
         </div>
         <div className='text-center m-4'>
-        <button type="submit" className="btn btn-success " onClick={onsubmit}> Login </button> 
+        <button type="submit" className="btn btn-success " onSubmit={onsubmit} > Login </button> 
         </div>
         <div>
             <h5 className='text-center'> New User? <a href='/register'> REGISTER NOW</a></h5>
