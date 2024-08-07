@@ -47,7 +47,6 @@ const login = async (req,res)=>{
             process.env.JWT_SECRET,
             { expiresIn: '24h' }          
         )
-
         res.status(200)
         .json({
             message : "login succesfully ",

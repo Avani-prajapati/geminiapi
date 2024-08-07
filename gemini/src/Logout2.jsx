@@ -1,9 +1,12 @@
+import Cookie from "js-cookie"
+import Home from "./Home"
 export default function Logout2(){
+  function logout(){
+    Cookie.remove('token');
+  }
+ logout();
+
     return(
-        <div className="py-4">
-        <h1 className="text-center my-5">
-            welcome logout page
-        </h1>
-        </div>
+        <Home></Home>
     )
 }

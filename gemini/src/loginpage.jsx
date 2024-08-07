@@ -2,6 +2,8 @@ import './loginpage.css';
 import Header from "./header.jsx"
 import { useState } from 'react';
 import axios from "axios";
+import Cookie from "js-cookie"
+import Home from './Home.jsx';
 
 export default function loginpage(){
     const [email,setEmail] = useState("");
@@ -11,17 +13,16 @@ export default function loginpage(){
    function onsubmit(e){
         e.preventDefault();
         axios.post("http://localhost:8080/auth/login",{email:email,password:password})
-        .then(res => {console.log(res.data.name)
+        .then(res => {console.log(res.data)
+            Cookie.set('token',res.data.jwtToken)
         })
-        
-       console.log(email);
-       console.log(password);
+
        setEmail("");
        setPassword("");
+        
     }
 
     return(
-        
         <div className='log mt-5 pt-4 pb-5 log container-fluid w-100'>
       <Header></Header>
       <div className=' backimg align d-flex row p-3  justify-content-between' id='login'>
@@ -44,7 +45,7 @@ export default function loginpage(){
         <button type="submit" className="btn btn-success " onClick={onsubmit}> Login </button> 
         </div>
         <div>
-            <h5 className='text-center'> Not register yet<a href='/register'> REGISTER NOW</a></h5>
+            <h5 className='text-center'> New User? <a href='/register'> REGISTER NOW</a></h5>
         </div>
     </form>
 </div>
