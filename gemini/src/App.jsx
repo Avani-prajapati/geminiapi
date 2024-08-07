@@ -7,6 +7,7 @@ import Loginpage from './loginpage.jsx'
 import Page2 from './page2.jsx'
 
 
+
 function App() {
   return (<>
     <Navbar></Navbar>
