@@ -38,7 +38,7 @@ export default function loginpage(){
         </div>
         <div className="mb-3">
         <label htmlFor="exampleInputPassword1" className="form-label" >Password</label>
-        <input type="password" className="form-control" value={password} pattern='(?=.*\d).{6,}' title='Must Contain Atleast 6 letters' id="exampleInputPassword1" onChange={ e => setPassword(e.target.value)}/>
+        <input type="password" className="form-control" value={password} pattern='.{6,}' title='Must Contain Atleast 6 letters' id="exampleInputPassword1" onChange={ e => setPassword(e.target.value)}/>
         </div>
         <div className='text-center m-4'>
         <button type="submit" className="btn btn-success " onSubmit={onsubmit} > Login </button> 
