@@ -11,19 +11,19 @@ export default function loginpage(){
    
 
    function onsubmit(e){
+        setEmail("");
+        setPassword("");
+
+        console.log(email)
+        console.log(password)
+
         e.preventDefault();
         axios.post("http://localhost:8080/auth/login",{email:email,password:password})
         .then(res => {console.log(res.data)
             Cookie.set('token',res.data.jwtToken)
-        })
-    
-       setEmail("");
-       setPassword("");
-        
+        })  
     }
    
-
-
     return(
         <div className='log mt-5 pt-4 pb-5 log container-fluid w-100'>
       <Header></Header>
@@ -44,7 +44,7 @@ export default function loginpage(){
         <input type="password" className="form-control" value={password} pattern='.{6,}' title='Must Contain Atleast 6 letters' id="exampleInputPassword1" onChange={ e => setPassword(e.target.value)}/>
         </div>
         <div className='text-center m-4'>
-        <button type="submit" className="btn btn-success " onSubmit={onsubmit} > Login </button> 
+        <button type="submit" className="btn btn-success " onClick={onsubmit} > Login </button> 
         </div>
         <div>
             <h5 className='text-center'> New User? <a href='/register'> REGISTER NOW</a></h5>

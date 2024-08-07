@@ -11,6 +11,7 @@ import { useEffect } from "react";
 
 export default function Home(){
    const [name,setName] = useState("");
+  // let name = "";
 
    useEffect(() => {
     axios.post("http://localhost:8080/home",{'token':Cookie.get('token')})

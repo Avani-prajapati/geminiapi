@@ -42,7 +42,7 @@ export default function(){
         <input type="password" className="form-control" value={password} pattern='.{6,}' title='Must Contain Atleast 6 letters' onChange={e=>setPassword(e.target.value)} id="exampleInputPassword1"/>
         </div>
         <div className='text-center m-4'>
-        <button type="submit" className="btn btn-success " onSubmit={onsubmit}>Submit</button> 
+        <button type="submit" className="btn btn-success " onClick={onsubmit}>Submit</button> 
         </div>
         
     </form>

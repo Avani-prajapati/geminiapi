@@ -1,15 +1,16 @@
 export default function RecentData(){
 return(
-<div className=" container-fluid  d-flex row justify-content-start w-100 p-2 recent shodow ">
-  <h2>Your recent exploration</h2>
+<div className=" container-fluid text-center pt-5 d-flex row justify-content-start w-100 p-2 recent shodow ">
+  <h2 className="m-4  pt-5" style={{textShadow:"3px 3px 3px black"}}>Tip and trick for farming and planting at your fingers only 
+   <br>
+   </br>
+   <br/>
+   A warm Welvome to our farming hub
+  </h2>
  <div className=" d-flex col-lg-6 col-12 text-center gap-2  p-3 ">
-    <div className="p-2">
+    {/* <div className="p-2">
     <img src="./geminiimage/slide2tree.jpg" className="img-fluid  " ></img>
     </div>
-    {/* <div className=" p-3">
- <img src="./geminiimage/slide2soil.jpg" className=" img-thumbnail img-fluid " ></img>
-
-    </div> */}
      <div className="p-2">
     <img src="./geminiimage/slide2tree.jpg" className="img-fluid " ></img>
     </div>
@@ -20,11 +21,11 @@ return(
       <h6 className=" dis">
         expolre more
       </h6>
-    </div>
+    </div> */}
 
  </div>
  <div className="col-lg-6 col-12  d-flex text-center gap-4 justify-content-center p-3 h-25 align-content-center">
-    <div className=" p-3">
+    {/* <div className=" p-3">
  <img src="./geminiimage/slide2soil.jpg" className="img-fluid " ></img>
 
     </div>
@@ -41,7 +42,7 @@ return(
       </h6>
     </div> 
    
- 
+  */}
  </div>
 
 </div>

@@ -50,6 +50,8 @@ color: white;
   content: "";
 background:url('/geminiimage/finalg12.webp') no-repeat top/cover;
 background:url('/geminiimage/g7.jpg') no-repeat bottom/cover;
+background:url('https://media.istockphoto.com/id/1272651366/vector/farm-landscape-vector-illustration-with-green-meadow-field-tractor-and-animal-cow-horse.jpg?s=612x612&w=0&k=20&c=FrtihFxRhHzcWxNSytdZ1iyHstGFk5OIKINDU2y9phM=') no-repeat bottom/cover;
+background:url('https://www.financialexpress.com/wp-content/uploads/2023/04/smart-agriculture-iot-with-hand-planting-tree-background-1.jpg')  bottom/cover;
 
 position:absolute;
 height: 100%;
