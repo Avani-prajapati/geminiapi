@@ -1,5 +1,11 @@
-import "./Navbar.css"
-export default function Navbar(){
+import { userContext } from "../CreateContext.js";
+import "../css/Navbar.css"
+import { useContext } from "react";
+
+
+export default  function Navbar(){
+  const  user = useContext(userContext)
+  console.log(user.name);
     return(
    
       <nav className="navbar navbar-expand-lg fixed-top navbar-light border-bottom">
@@ -10,18 +16,20 @@ export default function Navbar(){
           <span className="navbar-toggler-icon text-center"></span>
         </button>
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 fs-4 text-center nav-ul">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 fs-4 text-center nav-ul ">
             <li className="nav-item ">
-              <a className="nav-link active  mx-3" aria-current="page" href="/">Home</a>
+              <a className="nav-link mx-3 mt-2" aria-current="page" href="/home">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link  mx-3 " href="/logout">Log Out</a>
+              <a className="nav-link  mx-3 mt-2 " href="/logout">Log Out</a>
             </li>      
             <li className="nav-item">
-              <a className="nav-link mx-3" href="#test">Contact-Info</a>
+              <a className="nav-link mx-3 mt-2" href="#test">Contact-Info</a>
             </li>      
-            <li className="nav-item">
-              <a className="nav-link mx-3" href="/login">login</a>
+            <li className="nav-item text-white">
+              {/* <a className="nav-link mx-3" href="/login">login</a> */}
+              {user.name?<img src="../geminiimage/user logo.png" className=" img-fluid bg-white rounded-4" style={{height:'2rem'}} ></img>:<></>}
+              <div>{user.name}</div>
             </li>      
         
           </ul>

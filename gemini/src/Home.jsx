@@ -1,48 +1,33 @@
-
-import Explore from "./Explore";
-import Navbar from "./Navbar";
-import RecentData from "./RecentData";
-import UserDetail from "./UserDetail";
-import Page1_2 from "./Page1_2";
-import { useRef, useState } from "react";
-import Cookie from "js-cookie"
-import axios from "axios"
+import Explore from "./component/Explore";
+import Navbar from "./component/Navbar";
+import Page1_2 from "./component/Page1_2";
+import Welcome from "./component/Welcome";
+import RecentData from "./component/RecentData"
 import { useEffect } from "react";
 
 export default function Home(){
-   const [name,setName] = useState("");
-  // let name = "";
-
-   useEffect(() => {
-    axios.post("http://localhost:8080/home",{'token':Cookie.get('token')})
-     .then(res=> {console.log(res.data)
-       setName(res.data.name);
-     })
-    },[]);
-
+// window.location.reload()
     return(
-     <div className="container-fuild py-3 fs-5 w-100" id="home">
-      <div className="container-fluid w-100 receuser m-0">
-        <section className="container-fluid m-auto align-content-center w-100 m-0">
-            <UserDetail name={name}></UserDetail>
-        </section>   
-    
-        <section className="container-fluid w-100">
-            <RecentData></RecentData>
-        </section>
+    <div className="container-fuild py-3 fs-5 w-100" id="home">
+        <Navbar></Navbar>
+      <div className="container-fluid   w-100 receuser m-0">
+            <Welcome></Welcome>
       </div>
       <div className="exp">
+        <section>
+        <RecentData></RecentData>
+        </section>
         <hr className=" text-success"></hr>
         <section className=" ">
-          <Explore></Explore>
+          <Explore  ></Explore>
         </section>
-        </div>
+      </div>
         <section  className="last">
           <Page1_2></Page1_2>
         </section>
         
         </div>
-      
+    
 
 )
 }

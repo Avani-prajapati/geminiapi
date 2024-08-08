@@ -1,14 +1,14 @@
-import './loginpage.css';
+import '../css/loginpage.css';
 import Header from "./header.jsx"
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import axios from "axios";
 import Cookie from "js-cookie"
-import Home from './Home.jsx';
+import { useNavigate } from 'react-router-dom';
 
 export default function loginpage(){
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
-   
+    const nevigate = useNavigate()
 
    function onsubmit(e){
         setEmail("");
@@ -20,12 +20,16 @@ export default function loginpage(){
         e.preventDefault();
         axios.post("http://localhost:8080/auth/login",{email:email,password:password})
         .then(res => {console.log(res.data)
-            Cookie.set('token',res.data.jwtToken)
-        })  
+            Cookie.set('token',res.data.jwtToken) 
+            nevigate('/home')
+            window.location.reload()  
+        }).catch(err=>alert(err.response.data.message))  
+       
     }
    
     return(
-        <div className='log mt-5 pt-4 pb-5 log container-fluid w-100'>
+       
+        <div className='log pt-4 pb-5 log container-fluid vh-100 w-100'>
       <Header></Header>
       <div className=' backimg align d-flex row p-3  justify-content-between' id='login'>
         <div className='col-lg-6 col-12 imgg text-center'>

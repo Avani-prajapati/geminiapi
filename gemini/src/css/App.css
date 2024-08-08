@@ -1,6 +1,6 @@
 
 .card_ img{
-height: 18rem;
+height: 17rem;
 }
 .ca:hover{
  filter: drop-shadow(20px 20px 30px rgb(213, 249, 213));
@@ -42,15 +42,25 @@ position: relative;
   position: relative;
 
 }  
+.page3div{
+width: fit-content;
+height: fit-content;
+}
+
+.welcome{
+ text-shadow: 3px 3px 3px rgb(1, 15, 1);
+ backface-visibility: hidden;
+}
 
 .receuser{
 color: white;
+height: 40rem;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .receuser::before{
   content: "";
-background:url('/geminiimage/finalg12.webp') no-repeat top/cover;
-background:url('/geminiimage/g7.jpg') no-repeat bottom/cover;
-background:url('https://media.istockphoto.com/id/1272651366/vector/farm-landscape-vector-illustration-with-green-meadow-field-tractor-and-animal-cow-horse.jpg?s=612x612&w=0&k=20&c=FrtihFxRhHzcWxNSytdZ1iyHstGFk5OIKINDU2y9phM=') no-repeat bottom/cover;
 background:url('https://www.financialexpress.com/wp-content/uploads/2023/04/smart-agriculture-iot-with-hand-planting-tree-background-1.jpg')  bottom/cover;
 
 position:absolute;
@@ -59,5 +69,5 @@ top: 0px;
 left: 0px;
 width: 100%;
 z-index: -1;
-opacity: 0.75;
+opacity: 0.8;
 }

@@ -1,18 +1,22 @@
 import { useState } from "react";
-import Header from "./header";
+import Header from "./header.jsx";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 
 export default function(){
     const [name,setName] = useState("");
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
+    const nevigate = useNavigate()
+
  
    function onsubmit(e){
         e.preventDefault();
         axios.post("http://localhost:8080/auth/signup",{name:name,email:email,password:password})
         .then(res => {console.log(res.data)
-        })
+            nevigate('/')
+        }).catch(err=>{alert(err.response.data.message)})
        console.log(email);
        console.log(password);
        setName("");
@@ -20,11 +24,11 @@ export default function(){
        setPassword("");
     }
     return(
-        <div className="log mt-5 pt-5 pb-4 container-fluid w-100">
+        <div className="log pt-5 vh-100 pb-4 container-fluid w-100">
             <Header></Header>
         <div className='align d-flex row p-3 justify-content-between '>
         <div className='col-md-6 col-12 imgg text-center'>
-            <img src='./signin22.png' ></img>
+            <img src='../geminiimage/login image 2.webp' ></img>
         </div>
     <form  className='formm col-md-6 col-12 px-5 mt-sm-2 mt-md-0 text-white font-monospace '>
     <h2 className='text-center'>Register</h2>

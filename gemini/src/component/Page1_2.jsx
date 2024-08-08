@@ -1,4 +1,4 @@
-import './Page1_2.css'
+import '../css/Page1_2.css'
 export default function page1_2(){
     return(
         <div className=" bgcolor d-flex flex-column px-5  py-5 gap-4">
