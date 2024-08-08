@@ -29,7 +29,7 @@ export default function loginpage(){
    
     return(
        
-        <div className='log pt-4 pb-5 log container-fluid vh-100 w-100'>
+        <div className='log pt-4 pb-5 mt-lg-4 container-fluid w-100'>
       <Header></Header>
       <div className=' backimg align d-flex row p-3  justify-content-between' id='login'>
         <div className='col-lg-6 col-12 imgg text-center'>

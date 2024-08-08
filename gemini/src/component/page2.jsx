@@ -24,11 +24,11 @@ export default function(){
        setPassword("");
     }
     return(
-        <div className="log pt-5 vh-100 pb-4 container-fluid w-100">
+        <div className="log pt-4 pb-5 mt-lg-4  container-fluid w-100">
             <Header></Header>
         <div className='align d-flex row p-3 justify-content-between '>
         <div className='col-md-6 col-12 imgg text-center'>
-            <img src='../geminiimage/login image 2.webp' ></img>
+            <img src='../geminiimage/login image 2.webp' className="img-fluid"></img>
         </div>
     <form  className='formm col-md-6 col-12 px-5 mt-sm-2 mt-md-0 text-white font-monospace '>
     <h2 className='text-center'>Register</h2>
