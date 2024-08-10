@@ -5,11 +5,11 @@ import Logout2 from './component/Logout2.jsx'
 import Loginpage from './component/loginpage.jsx'
 import Page2 from './component/page2.jsx'
 import Page3 from './component/page3.jsx'
-import Page4 from './component/page4.jsx'
 import { userContext} from './CreateContext.js'
 import Cookie from "js-cookie"
 import { useState ,useEffect} from 'react'
 import axios from "axios"
+import Page3_2 from './component/Page3_2.jsx'
 
 function App() {
   const [user,setUser] = useState({});
@@ -21,7 +21,6 @@ function App() {
      })
   },[]);
 
-  
   return (<>
 
   <userContext.Provider value={user}>
@@ -32,7 +31,7 @@ function App() {
          <Route path='/' element={<Loginpage/>}></Route> 
          <Route path='/register' element={<Page2></Page2>}></Route>
          <Route path='/farming' element={<Page3></Page3>}></Route>
-         <Route path='/tree' element={<Page4></Page4>}></Route>
+         <Route path='/tree' element={<Page3_2></Page3_2>}></Route>
        </Routes>
       </BrowserRouter>
      </userContext.Provider>

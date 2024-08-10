@@ -11,7 +11,10 @@ height: 17rem;
 background-color: rgb(144, 205, 144);
 background: transparent;
 }
-
+/* .f{
+ font-family: Arial, Helvetica, sans-serif;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
 
 ::-webkit-scrollbar{
     width: 10px;

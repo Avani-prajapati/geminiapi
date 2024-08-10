@@ -3,10 +3,9 @@ import Navbar from "./component/Navbar";
 import Page1_2 from "./component/Page1_2";
 import Welcome from "./component/Welcome";
 import RecentData from "./component/RecentData"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home(){
-// window.location.reload()
     return(
     <div className="container-fuild py-3 fs-5 w-100" id="home">
         <Navbar></Navbar>
@@ -14,12 +13,12 @@ export default function Home(){
             <Welcome></Welcome>
       </div>
       <div className="exp">
-        <section>
+        <section className="ps-4 pt-1">
         <RecentData></RecentData>
         </section>
         <hr className=" text-success"></hr>
-        <section className=" ">
-          <Explore  ></Explore>
+        <section className=" " id="explore">
+          <Explore ></Explore>
         </section>
       </div>
         <section  className="last">
@@ -27,7 +26,5 @@ export default function Home(){
         </section>
         
         </div>
-    
-
 )
 }

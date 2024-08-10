@@ -1,47 +1,20 @@
+import { useContext } from "react"
+// import { progress } from "../CreateContext"
 export default function RecentData(){
+
 return(
-<div className=" container-fluid d-flex row  bg-body-secondary  rounded-3 align-content-center p-3 my-3 gap-3 gap-lg-0 shadow w-100 recent ">
- <div className=" d-flex col-lg-6 col-12 justify-content-center text-center gap-2  ">
-  <div className="row">
-    <div className="col-4">
-    <img src="../geminiimage/slide2tree.jpg" className="img-fluid img-thumbnail" ></img>
+<div className=" container-fluid d-flex row bg-success-subtle rounded-5 rounded-3 align-content-center p-3 my-3  gap-3 gap-lg-0 ps-1 shadow w-100 recent ">
+<div className="col-3 d-none d-lg-block">
+     <img src="../geminiimage/HAPPY TREE 2.png" className=" rounded-4 "  ></img>
+      
     </div>
-     <div className="col-4  ">
-    <img src="../geminiimage/slide2tree.jpg" className="img-fluid img-thumbnail" ></img>
-    </div>
-    <div className="mt-2 col-4  align-content-center fs-5">
-        <h1 >
-            +
-        </h1>
-      <h6 className=" dis">
-        expolre more
-      </h6>
-    </div>
-
-   </div>
+ <div className=" d-flex flex-column col-lg-6 col-12 justify-content-center text-center gap-2 p-5 ">
+   <h2>Let's start exploring  How to farm/ analys tree</h2>
  </div>
- <div className="col-lg-6 col-12  d-flex text-center justify-content-between gap-2 ">
-  <div className="row">
-    <div className="col-4 ">
-     <img src="../geminiimage/slide2soil.jpg" className="img-fluid img-thumbnail "  ></img>
+ <div className="col-3 text-end d-none d-lg-block">
+     <img src="../geminiimage/HAPPY TREE 2.png" className=" rounded-4 "  ></img>
 
     </div>
-    <div className="col-4">
- <img src="../geminiimage/slide2soil.jpg" className="img-fluid img-thumbnail " ></img>
-
-    </div>
-    <div className="mt-2 col-4 align-content-center fs-5">
-        <h1 >
-            +
-        </h1>
-      <h6 className="dis">
-        expolre   more
-      </h6>
-    </div> 
-   
-    </div>
- </div>
-
 </div>
 )
 

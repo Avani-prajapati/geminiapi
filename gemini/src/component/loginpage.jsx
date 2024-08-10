@@ -28,9 +28,11 @@ export default function loginpage(){
     }
    
     return(
-       
+    //    <promt.Provider>
         <div className='log pt-4 pb-5 mt-lg-4 container-fluid w-100'>
-      <Header></Header>
+        <div>
+        <h2 className=" text-center text-white py-5 my-4  text-light"> Welcome to soil and tree analyser...!!</h2>
+        </div>
       <div className=' backimg align d-flex row p-3  justify-content-between' id='login'>
         <div className='col-lg-6 col-12 imgg text-center'>
             <img src='./geminiimage/login image.webp' className=' img-fluid' ></img>
@@ -56,6 +58,7 @@ export default function loginpage(){
     </form>
 </div>
 </div>
+// </promt.Provider>
 
     )
 }

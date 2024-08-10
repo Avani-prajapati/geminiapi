@@ -24,8 +24,11 @@ export default function(){
        setPassword("");
     }
     return(
-        <div className="log pt-4 pb-5 mt-lg-4  container-fluid w-100">
-            <Header></Header>
+        <div className="log pt-4 pb-5 mt-lg-4 justify-content-center container-fluid w-100">
+            {/* <Header></Header> */}
+            <div>
+        <h2 className=" text-center text-white py-5 my-4  text-light"> Welcome to soil and tree analyser...!!</h2>
+        </div>
         <div className='align d-flex row p-3 justify-content-between '>
         <div className='col-md-6 col-12 imgg text-center'>
             <img src='../geminiimage/login image 2.webp' className="img-fluid"></img>

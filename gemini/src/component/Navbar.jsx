@@ -11,7 +11,7 @@ export default  function Navbar(){
       <nav className="navbar navbar-expand-lg fixed-top navbar-light border-bottom">
       <div className="container-fluid text-break">
         <a className="navbar-brand fs-3 text-white" href="#">
-            Trees </a>
+            Gr<img src="/geminiimage/slide2soil.jpg" style={{margin:4,height:50,width:50,border:"1px solid black",borderRadius:'50%'}}></img>w Together </a>
         <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon text-center"></span>
         </button>
@@ -24,9 +24,9 @@ export default  function Navbar(){
               <a className="nav-link  mx-3 mt-2 " href="/logout">Log Out</a>
             </li>      
             <li className="nav-item">
-              <a className="nav-link mx-3 mt-2" href="#test">Contact-Info</a>
+              <a className="nav-link mx-3 mt-2" href="#explore">Explore</a>
             </li>      
-            <li className="nav-item text-white">
+            <li className="nav-item mx-2 text-white">
               {/* <a className="nav-link mx-3" href="/login">login</a> */}
               {user.name?<img src="../geminiimage/user logo.png" className=" img-fluid bg-white rounded-4" style={{height:'2rem'}} ></img>:<></>}
               <div>{user.name}</div>
