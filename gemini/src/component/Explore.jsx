@@ -1,6 +1,3 @@
-import { useState } from "react"
-import { useNavigate } from 'react-router-dom';
-import Page3 from "./page3.jsx";
 
 export default function Explore(){
 

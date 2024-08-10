@@ -27,7 +27,6 @@ export default  function Navbar(){
               <a className="nav-link mx-3 mt-2" href="#explore">Explore</a>
             </li>      
             <li className="nav-item mx-2 text-white">
-              {/* <a className="nav-link mx-3" href="/login">login</a> */}
               {user.name?<img src="../geminiimage/user logo.png" className=" img-fluid bg-white rounded-4" style={{height:'2rem'}} ></img>:<></>}
               <div>{user.name}</div>
             </li>      

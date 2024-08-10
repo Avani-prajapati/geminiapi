@@ -3,7 +3,6 @@ const UserModel = require('../Models/User');
 const home = async (req,res)=>{
 
     const token = req.body.token;
-    console.log(req.body)
     let user_id ;
     jwt.verify(
         token,
@@ -21,10 +20,6 @@ const home = async (req,res)=>{
             }
         }
     )
-
-    // const user = await UserModel.findById(user_id).select("-_id -password");
-    // res.status(200)
-    // .send(user)
 }
 
 module.exports = home

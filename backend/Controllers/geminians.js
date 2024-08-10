@@ -5,8 +5,6 @@ const fs = require("fs");
 const genAI = new GoogleGenerativeAI('AIzaSyDKjmF50gGDTbjYktcXU11uE3muVwPu2pI');
 
 const funcall = async (req,res)=>{
-  console.log(req.body)
-  console.log(req.body.filedata.name)
  try{   
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 const prompt = req.body.promt;

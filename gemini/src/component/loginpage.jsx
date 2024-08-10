@@ -1,6 +1,5 @@
 import '../css/loginpage.css';
-import Header from "./header.jsx"
-import { useContext, useState } from 'react';
+import {  useState } from 'react';
 import axios from "axios";
 import Cookie from "js-cookie"
 import { useNavigate } from 'react-router-dom';
@@ -28,7 +27,7 @@ export default function loginpage(){
     }
    
     return(
-    //    <promt.Provider>
+    
         <div className='log pt-4 pb-5 mt-lg-4 container-fluid w-100'>
         <div>
         <h2 className=" text-center text-white py-5 my-4  text-light"> Welcome to soil and tree analyser...!!</h2>
@@ -58,7 +57,7 @@ export default function loginpage(){
     </form>
 </div>
 </div>
-// </promt.Provider>
+
 
     )
 }

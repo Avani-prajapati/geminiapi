@@ -3,7 +3,6 @@ import Navbar from "./component/Navbar";
 import Page1_2 from "./component/Page1_2";
 import Welcome from "./component/Welcome";
 import RecentData from "./component/RecentData"
-import { useEffect, useState } from "react";
 
 export default function Home(){
     return(

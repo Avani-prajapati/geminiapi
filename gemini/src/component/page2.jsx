@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Header from "./header.jsx";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -25,7 +24,6 @@ export default function(){
     }
     return(
         <div className="log pt-4 pb-5 mt-lg-4 justify-content-center container-fluid w-100">
-            {/* <Header></Header> */}
             <div>
         <h2 className=" text-center text-white py-5 my-4  text-light"> Welcome to soil and tree analyser...!!</h2>
         </div>
