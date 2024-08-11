@@ -16,14 +16,6 @@ app.get('/ping',(req,res)=>{
 })
 
 app.use(express.static("./public"));
-app.use((req, res, next) => {
-    const Logtime = new Date(Date.now());
-    if(req.path != "/appIcon.ico"){
-    console.log(
-      `Method : ${req.method} \n Path : ${req.path} \n Time : ${Logtime} \n`
-    )}
-    next();
-  });
 app.use(bodyParser.json())
 app.use(cors())
 app.use('/auth',AuthRouter)
@@ -39,7 +31,6 @@ var storage = multer.diskStorage({
 var uploda = multer({storage:storage}).array('file');
 
 app.post('/upload',function(req,res){
-    console.log(req.body)
     uploda(req,res,function(err){
         if(err instanceof multer.MulterError){
             return res.status(500).json(err);
