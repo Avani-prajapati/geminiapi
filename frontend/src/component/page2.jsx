@@ -32,7 +32,7 @@ export default function(){
             <img src='../geminiimage/login image 2.webp' className="img-fluid"></img>
         </div>
     <form  className='formm col-md-6 col-12 px-5 mt-sm-2 mt-md-0 text-white font-monospace '>
-    <h2 className='text-center'>Register</h2>
+    <h2 className='text-center'>SignUp</h2>
         <div className="mb-3">
         <label htmlFor="exampleInputName" className="form-label">Name</label>
         <input type="text" className="form-control" id="exampleInputName" value={name} onChange={e=>setName(e.target.value)} aria-describedby="emailHelp"/>

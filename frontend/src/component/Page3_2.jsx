@@ -7,7 +7,7 @@ import { useState,useRef} from 'react';
 export default function Page3_2(){
     console.log("tree");
 
-    const promt ="if there is no image of tree/plant or plant leaf then say there is no tree/plant or tree /plant leaf detected please upload image according to content , else give answer which plant or tree is this ,where it is shawn most which type of soil are suitable for this benefit of growing this tree/plant and disadvantages of tree/plant remeber your are here to help only tree/plant related image detection only "
+    const promt ="if there is no image of tree/plant or plant leaf then say there is no tree/plant or tree /plant leaf detected please upload image according to content , else give answer which plant or tree is this ,where it is shawn most which type of soil are suitable for this benefit of growing this tree/plant and disadvantages of tree/plant give detail information of tree remeber your are here to help only tree/plant related image detection only "
 
     const [image,setImage] = useState("");
     const [file,setFile] = useState(null);

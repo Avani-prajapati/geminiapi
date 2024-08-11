@@ -52,7 +52,7 @@ export default function loginpage(){
         <button type="submit" className="btn btn-success " onClick={onsubmit} > Login </button> 
         </div>
         <div>
-            <h5 className='text-center'> New User? <a href='/register'> REGISTER NOW</a></h5>
+            <h5 className='text-center'> New User? <a href='/register'> Sign Up NOW</a></h5>
         </div>
     </form>
 </div>
