@@ -16,3 +16,22 @@ background: url("/geminiimage/loginback.png") no-repeat center/cover;
 height: inherit;
 
 }
+
+
+/* Add in loginpage.css */
+.glassmorph {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 1rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.transition {
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.transition:hover {
+  background-color: #218838;
+  transform: scale(1.02);
+}

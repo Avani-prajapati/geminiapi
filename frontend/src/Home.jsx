@@ -13,7 +13,7 @@ export default function Home(){
       </div>
       <div className="exp">
         <section className="ps-4 pt-1">
-        <RecentData></RecentData>
+        {/* <RecentData></RecentData> */}
         </section>
         <hr className=" text-success"></hr>
         <section className=" " id="explore">

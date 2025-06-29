@@ -1,4 +1,4 @@
-.nav-ul li a{
+/* .nav-ul li a{
 color: white;
 }
 
@@ -13,4 +13,24 @@ color: white;
   opacity: 2;
 background-color: rgb(38, 170, 26);
  
+} */
+
+.hover-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
 }
